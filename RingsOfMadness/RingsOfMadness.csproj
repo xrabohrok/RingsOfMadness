@@ -54,10 +54,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puzzle\Piece.cs" />
+    <Compile Include="Puzzle\PuzzleController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\gstbinrm.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(SolutionDir)\RingsOfMadness\SFML.Net-2.1-32bits\SFML.Net-2.1\extlibs" "$(SolutionDir)\RingsOfMadness\bin\Debug" /Q /Y /S</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(SolutionDir)\RingsOfMadness\SFML.Net-2.1-32bits\SFML.Net-2.1\extlibs" "$(SolutionDir)\RingsOfMadness\bin\Debug" /Q /Y /S
+xcopy "$(SolutionDir)\RingsOfMadness\resources" "$(SolutionDir)\RingsOfMadness\bin\Debug\resources\" /Q /Y /S</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
