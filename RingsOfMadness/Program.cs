@@ -33,7 +33,7 @@ namespace RingsOfMadness
             _window.SetVisible(true);
             _window.Closed += new EventHandler(OnClosed);
 
-            Texture tex = new Texture("Sharpedo.png");
+            Texture tex = new Texture("resources\\Sprites\\Sharpedo.png");
             Sprite spr = new Sprite(tex);
 
             Text fps = new Text("Fps is", new Font("resources\\gstbinrm.ttf"));
