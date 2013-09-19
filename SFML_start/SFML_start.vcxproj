@@ -71,7 +71,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActionBase.cpp" />
+    <ClCompile Include="ActionHopperController.cpp" />
+    <ClCompile Include="ActionHopperModel.cpp" />
+    <ClCompile Include="ActionHopperView.cpp" />
+    <ClCompile Include="BoardController.cpp" />
+    <ClCompile Include="BoardModel.cpp" />
+    <ClCompile Include="BoardView.cpp" />
+    <ClCompile Include="eventWatcher.cpp" />
+    <ClCompile Include="gamestateController.cpp" />
+    <ClCompile Include="gamestateModel.cpp" />
+    <ClCompile Include="gamestateView.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RuneController.cpp" />
+    <ClCompile Include="RuneModel.cpp" />
+    <ClCompile Include="RuneView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionBase.h" />
+    <ClInclude Include="ActionHopperController.h" />
+    <ClInclude Include="ActionHopperModel.h" />
+    <ClInclude Include="ActionHopperView.h" />
+    <ClInclude Include="BoardController.h" />
+    <ClInclude Include="BoardModel.h" />
+    <ClInclude Include="BoardView.h" />
+    <ClInclude Include="eventWatcher.h" />
+    <ClInclude Include="gamestateController.h" />
+    <ClInclude Include="gamestateModel.h" />
+    <ClInclude Include="gamestateView.h" />
+    <ClInclude Include="RuneController.h" />
+    <ClInclude Include="RuneModel.h" />
+    <ClInclude Include="RuneView.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
