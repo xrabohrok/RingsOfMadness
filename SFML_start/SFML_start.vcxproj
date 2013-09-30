@@ -83,6 +83,7 @@
     <ClCompile Include="gamestateModel.cpp" />
     <ClCompile Include="gamestateView.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RendererBase.cpp" />
     <ClCompile Include="RuneController.cpp" />
     <ClCompile Include="RuneModel.cpp" />
     <ClCompile Include="RuneView.cpp" />
@@ -99,6 +100,7 @@
     <ClInclude Include="gamestateController.h" />
     <ClInclude Include="gamestateModel.h" />
     <ClInclude Include="gamestateView.h" />
+    <ClInclude Include="RendererBase.h" />
     <ClInclude Include="RuneController.h" />
     <ClInclude Include="RuneModel.h" />
     <ClInclude Include="RuneView.h" />
