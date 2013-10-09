@@ -2,6 +2,7 @@
 
 #include "SFML\Graphics.hpp"
 #include "SFML\Window.hpp"
+#include "Animation.h"
 #include <list>
 
 using namespace std;
@@ -10,7 +11,7 @@ class RendererBase
 {
 public:
 
-	static RendererBase* getRenderer(sf::Window *win);
+	static RendererBase* getRenderer(sf::RenderWindow *win);
 	static RendererBase* getRenderer();
 
 	void registerSprite(sf::Sprite* spr);

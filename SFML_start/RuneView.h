@@ -1,21 +1,18 @@
-//Rune Models will keep track of the data in a Rune
-
+//Rune View handles drawing of pieces
 #pragma once
+
+#include "SFML\Graphics.hpp"
+
 class RuneView
 {
 public:
+
+	SF
+
 	RuneView(void);
 	~RuneView(void);
 
 private:
-	float rotation;
-	float scale;
-	float depth;
 
-	//open ports
-	bool top;
-	bool bottom;
-	bool right;
-	bool left;
 };
 

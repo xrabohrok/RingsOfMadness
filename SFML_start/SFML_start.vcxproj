@@ -75,6 +75,7 @@
     <ClCompile Include="ActionHopperController.cpp" />
     <ClCompile Include="ActionHopperModel.cpp" />
     <ClCompile Include="ActionHopperView.cpp" />
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="BoardController.cpp" />
     <ClCompile Include="BoardModel.cpp" />
     <ClCompile Include="BoardView.cpp" />
@@ -93,6 +94,7 @@
     <ClInclude Include="ActionHopperController.h" />
     <ClInclude Include="ActionHopperModel.h" />
     <ClInclude Include="ActionHopperView.h" />
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="BoardController.h" />
     <ClInclude Include="BoardModel.h" />
     <ClInclude Include="BoardView.h" />

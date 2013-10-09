@@ -1,7 +1,7 @@
 #include "RendererBase.h"
 
 
-RendererBase::RendererBase(sf::Window *_win):spriteList(),animationList(){
+RendererBase::RendererBase(sf::RenderWindow* _win):spriteList(),animationList(){
 
 }
 
@@ -41,7 +41,7 @@ void RendererBase::registerAnimation(Animation* anim)
 	animationList.push_back(anim);
 }
 
-RendererBase* RendererBase::getRenderer(sf::RenderWindow *windown)
+RendererBase* RendererBase::getRenderer(sf::RenderWindow *win)
 {
 	if (me == NULL)
 	{
