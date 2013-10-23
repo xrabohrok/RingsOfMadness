@@ -19,8 +19,6 @@ public:
 
 	void draw(double deltaTime);
 
-
-
 	~RendererBase(void);
 
 private:

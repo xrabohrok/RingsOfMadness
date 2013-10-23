@@ -20,7 +20,6 @@ public:
 	//overrride to make the action do something
 	virtual place action();
 
-
 private:
 
 	ActionBase(void);
