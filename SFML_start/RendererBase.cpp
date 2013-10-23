@@ -2,28 +2,29 @@
 
 
 RendererBase::RendererBase(sf::RenderWindow* _win):spriteList(),animationList(){
-
+	win = _win;
 }
 RendererBase::~RendererBase(void)
 {
 }
+RendererBase* RendererBase::me = NULL;
+
 void RendererBase::draw(double deltaTime)
 {
 	std::list<sf::Sprite*>::iterator iter = spriteList.begin();
 
-	for (int i = 0; i < spriteList.size(); i++)
+	if(spriteList.size() > 0)
+	for (std::list<sf::Sprite*>::iterator iter = spriteList.begin(); iter != spriteList.end(); ++iter)
 	{
 		win->draw(*(*iter));
-		iter++;
 	}
 
-	std::list<Animation*>::iterator iter2 = animationList.begin();
-
-	for (int i = 0; i < animationList.size(); i++)
+	
+	if(animationList.size() > 0)
+	for (std::list<Animation*>::iterator iter2 = animationList.begin(); iter2 != animationList.end(); ++iter2)
 	{
 		sf::Sprite temp = (*iter2)->draw(deltaTime);
 		win->draw(temp);
-		iter++;
 	}
 }
 void RendererBase::registerSprite(sf::Sprite* spr)
@@ -36,15 +37,15 @@ void RendererBase::registerAnimation(Animation* anim)
 }
 RendererBase* RendererBase::getRenderer(sf::RenderWindow *win)
 {
-	if (me == NULL)
+	if (RendererBase::me == NULL)
 	{
-		me = new RendererBase(win);
+		RendererBase::me = new RendererBase(win);
 	}
 
-	return me;
+	return RendererBase::me;
 
 }
 RendererBase* RendererBase::getRenderer()
 {
-	return me;
+	return RendererBase::me;
 }

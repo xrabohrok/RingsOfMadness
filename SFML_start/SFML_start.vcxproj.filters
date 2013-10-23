@@ -37,6 +37,12 @@
     <Filter Include="Header Files\Misc">
       <UniqueIdentifier>{33f39ae8-332b-4a82-96ca-1b341eb5ff5e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Content">
+      <UniqueIdentifier>{4b2b1568-916f-4b76-a16a-2f8116d6d1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content">
+      <UniqueIdentifier>{f0d32bec-a089-47bf-9811-1ba807a12f1a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -90,6 +96,9 @@
     <ClCompile Include="Animation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TestAnim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RuneController.h">
@@ -138,6 +147,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestAnim.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

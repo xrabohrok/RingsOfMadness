@@ -1,15 +1,25 @@
-#include "SFML/Graphics.hpp"
+#include "RendererBase.h"
 #include <iostream>
-
+#include "TestAnim.h"
 using namespace std;
 
 int main()
 {
 
-	sf::RenderWindow window(sf::VideoMode(200,200), "SFML Works!");
-	sf::CircleShape shape(30.f);
-	shape.setFillColor(sf::Color::Green);
-	shape.setPosition(100,100);
+
+
+	sf::RenderWindow window(sf::VideoMode(800,600), "SFML Works!");
+	RendererBase* renderer = RendererBase::getRenderer(&window);
+
+	
+
+
+	TestAnim test;
+
+	renderer->registerAnimation(&test);
+
+
+
 
 	cout<<"Another example of how to invoke the console";
 
@@ -17,7 +27,7 @@ int main()
 
 	piece[0].position = sf::Vector2f(30, 20);
 	piece[0].color = sf::Color::Blue;
-
+	
 	piece[1].position = sf::Vector2f(60, 15);
 	piece[1].color = sf::Color::Red;
 
@@ -29,9 +39,10 @@ int main()
 
 	piece[4].position = sf::Vector2f(30, 20);
 	piece[4].color = sf::Color::Blue;
-
 	
-	
+	sf::CircleShape shape(30.f);
+	shape.setFillColor(sf::Color::Green);
+	shape.setPosition(100,100);
 
 	while(window.isOpen())
 	{
@@ -48,6 +59,7 @@ int main()
 		window.clear();
 		window.draw(shape);
 		window.draw(piece);
+		renderer->draw(0);
 		window.display();
 	}
 

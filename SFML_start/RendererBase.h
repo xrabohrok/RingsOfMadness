@@ -33,6 +33,6 @@ private:
 
 };
 
-RendererBase* RendererBase::me = NULL;
+
 
 

@@ -88,6 +88,7 @@
     <ClCompile Include="RuneController.cpp" />
     <ClCompile Include="RuneModel.cpp" />
     <ClCompile Include="RuneView.cpp" />
+    <ClCompile Include="TestAnim.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ActionBase.h" />
@@ -106,6 +107,7 @@
     <ClInclude Include="RuneController.h" />
     <ClInclude Include="RuneModel.h" />
     <ClInclude Include="RuneView.h" />
+    <ClInclude Include="TestAnim.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

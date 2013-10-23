@@ -8,7 +8,7 @@ class Animation
 public:
 
 	
-	sf::Sprite draw(double deltaTime);
+	virtual sf::Sprite draw(double deltaTime);
 
 	Animation(void);
 	~Animation(void);

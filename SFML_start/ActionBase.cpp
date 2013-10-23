@@ -10,4 +10,9 @@ ActionBase::~ActionBase(void){
 
 }
 
+place ActionBase::action()
+{
+	return place::NONE;
+}
+
 
